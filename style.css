@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+ .login{
+     margin:2rem;
+     width: 90%;
+     margin-left: 10%;
+     margin-right: 10%;
+     border-radius: 10px;
+     border: 1px solid black;
+     padding: 15px;
+     
+
+
+ }
+ .type{
+     margin:10px;
+     width: 90%;
+     border-bottom: 2px solid black;
+     margin-bottom: 1rem;
+    
+
+ }
+ .type input {
+    border-style: none;
+
+ }
+ .botones{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+ .button{
+     padding: 5px;
+ }

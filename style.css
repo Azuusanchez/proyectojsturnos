@@ -12,6 +12,7 @@
      border-radius: 10px;
      border: 1px solid black;
      padding: 15px;
+     background-color: lightblue;
      
 
 
@@ -26,8 +27,12 @@
  }
  .type input {
     border-style: none;
+    width: 100%;
+    background-color: lightblue;
 
  }
+ 
+ 
  .botones{
      display: flex;
      flex-direction: row;

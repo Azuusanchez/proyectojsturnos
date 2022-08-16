@@ -5,23 +5,25 @@ const ingresar = document.querySelector ("#submitIngresar");
 const registrarse = document.querySelector ("#submitRegistrarse");
 
 
-let usuarios ={
+let usuarios =[{
     user: "azu.sanchez",
     contra: "miajazmin"
-}
+}]
+
+
 console.log(usuarios)
 
-function formularioIngresar () {
+function usuarioIngresado () {
     let usuarioIngresado = usuarios.find(userU => userU.user === usuario.value)
 
     if (usuarioIngresado == undefined) {
-        swal.fire(
+        Swal.fire(
             'No hay coinicidencia de Usuarios',
             'Registrese',
             
         )
-    } else if (usuarioIngresado.contra !== contra.value) {
-        swal.fire(
+    } else if (usuarioIngresado.contra !== contrasenia.value) {
+        Swal.fire(
             'Contraseña incorrecta',
             'error',
         )
@@ -29,6 +31,9 @@ function formularioIngresar () {
         window.location.href = "turnos.html"
     }
 }
-console.log (formularioIngresar)
 
+ingresar.onsubmit = (e) =>{
+    e.preventDefault(),
+    usuarioIngresado()
+}
 

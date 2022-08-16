@@ -22,7 +22,7 @@
         <section class="login">
     
             
-            <h2>Iniciar Sesion</h2>
+            <h2 class="titulo"> <strong> Inicia sesion con tu usuario y contraseña </strong></h2>
             <form id="form-iniciar">
                 <div class="type">
                 <input type="text" name="usuario" id="usuario" placeholder="Usuario">
@@ -32,7 +32,13 @@
             </div>
                 <div class="botones">
                         <input class="button" type="submit" value="Ingresar" id="submitIngresar">
-                        <input class="button" type="submit" value="Registrarse" id="submitRegistrarse">
+                        <div class="cuenta">
+                        <p>¿Necesitas una cuenta?</p>
+                        <input class="boton" type="submit" value="Registrarse" id="submitRegistrarse">
+                    </div>
+                        </div>
+                        <button id="olvideContrasenia">Olvide mi contraseña</button>
+
                 </form>
                 
             </section>
@@ -42,9 +48,9 @@
             <main>
                 <section>
 
-                <button id="olvideContrasenia">Olvide mi contraseña</button>
+               
             
-            <div id="Registrarse">
+            <div id="registrarseId">
                 <form id="form-registrarse">
                     <div>
                         <input type="text" name="NombreYApellido" id="nombreYApellido" placeholder="Nombre y Apellido">
@@ -84,7 +90,7 @@
     </footer>
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="index.js"></script>
 </body>
 </html>

@@ -3,6 +3,15 @@
     margin: 0;
     box-sizing: border-box;
   }
+   body{
+    background-color: lightpink;
+   }
+
+  .titulo{
+      font-family: cursive;
+      font-size: 28px;
+      
+  }
 
  .login{
      margin:2rem;
@@ -12,7 +21,8 @@
      border-radius: 10px;
      border: 1px solid black;
      padding: 15px;
-     background-color: lightblue;
+     background-color: white;
+
      
 
 
@@ -28,16 +38,50 @@
  .type input {
     border-style: none;
     width: 100%;
-    background-color: lightblue;
 
  }
  
  
- .botones{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
- }
  .button{
-     padding: 5px;
+     padding: 8px;
+     border-radius: 15px;
+     border: 1px solid cornflowerblue;
+     background-color:lightblue;
+     color: black;
+     margin-bottom: 1.5rem;
+     width: 100%;
  }
+ .button:hover{
+     background-color: cornflowerblue;
+
+ }
+ .boton{
+     border-style: none;
+     margin-bottom: 10px;
+
+ }
+
+ .cuenta{
+     display: flex;
+     flex-direction: column;
+
+ }
+ #olvideContrasenia{
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid lightblue ;
+    background-color:lightblue;
+    color: black;
+    margin-bottom: 1rem;
+}
+#olvideContrasenia:hover{
+    background-color: white;
+}
+
+
+#registrarseId{
+    display:none
+}
+
+
+ 

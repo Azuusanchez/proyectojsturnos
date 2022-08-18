@@ -2,6 +2,7 @@ const usuario = document.querySelector("#usuario");
 const contrasenia = document.querySelector("#contrasenia");
 const formularioIniciar = document.querySelector ("#form-iniciar");
 const ingresar = document.querySelector ("#submitIngresar");
+const navegadorLista = document.querySelector(".navegador-lista");
 const registrarse = document.querySelector ("#submitRegistrarse");
 const newRegister = document.querySelector ("#registrarse");
 const formularioRegistrarse = document.querySelector( "#form-registrarse");
@@ -25,6 +26,13 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) ||[{
 
 
 console.log(usuarios)
+
+navegadorLista.onclick = (e) =>{
+    e.preventDefault()
+    login.style.display = "flex"
+    console.log (navegadorLista)
+
+}
 
 function usuarioIngresado () {
     let usuarioIngresado = usuarios.find(userU => userU.user === usuario.value)
@@ -71,7 +79,7 @@ registrarse.onsubmit = (e) =>{
     e.preventDefault()
     registrarseId.style.display = "flex"
     console.log (registrarse)
-    
+
     formularioRegistrarse.onsubmit = (e) => {
         e.preventDefault()
     }

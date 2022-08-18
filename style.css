@@ -7,6 +7,45 @@
     background-color: lightpink;
    }
 
+   .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+   
+    
+   }
+
+   .navegador{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    
+}
+
+
+    .navegador-lista{
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        padding: 10px;
+       }
+   
+
+.estructura{
+    padding-top: 3.5rem;
+}
+
+
   .titulo{
       font-family: cursive;
       font-size: 28px;
@@ -79,9 +118,4 @@
 }
 
 
-#registrarseId{
-    display:none
-}
 
-
- 
